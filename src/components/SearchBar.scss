@@ -1,0 +1,91 @@
+@import '../styles/style.scss';
+
+.SearchBar {
+
+  .SearchBar__finder {
+    margin-top: $base-margin*2;
+
+    .SearchBar__text {
+      margin-bottom: $base-margin/2;
+      color: $white;
+      text-transform: uppercase;
+      font-size: $font-size-lg;
+    }
+      .Searchbar__inputField {
+        position: relative;
+
+        .Searchbar__input {
+          padding: $base-padding/1.333 $base-padding*1.25;
+          font-size: $font-size-lg;
+          outline: none;
+          width: 100%;
+          color: grey;
+          border: none;
+          border-bottom: 2px solid $darkRed;
+        }
+      }
+
+    .Searchbar__conf {
+      margin: $base-margin $base-margin - $base-margin;
+      display: flex;
+      justify-content: space-between;
+
+      .Searchbar__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_black {
+          border: 1px solid $white;
+          background: $black;
+          padding: $base-padding - $base-padding $base-padding*1.333;
+        }
+
+        .Searchbar__text {
+          color: $white;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: $font-size-s;
+        }
+
+        .Searchbar__btn {
+          background: grey;
+          border: none;
+          color: $white;
+          text-transform: uppercase;
+          font-weight: bold;
+          outline: none;
+          cursor: pointer;
+          transition: all .1s;
+
+          &_active {
+            background-color: $darkRed;
+          }
+
+          &_md {
+            font-size: 11px;
+            padding: $base-padding/6.666 $base-padding/1.333;
+            margin-left: $base-margin/2;
+          }
+
+          &_lg {
+            font-size: $font-size-s;
+            padding: $base-padding/1.333  $base-padding*4;
+          }
+
+          &_red {
+            background-color: $darkRed;
+
+            &:hover {
+              background-color: $lightRed;
+            }
+          }
+
+          &_grey {
+            background-color: grey;
+          }
+        }
+      }
+    }
+  }
+}

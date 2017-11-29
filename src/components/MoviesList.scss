@@ -1,0 +1,73 @@
+@import '../styles/style.scss';
+
+.MoviesList {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: $white;
+
+  .MoviesList__header {
+
+    min-height: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url(https://www.parkcinema.az/addons/shared_addons/themes/new/img/movie-bg2-small.jpg);
+
+    .MoviesList__container {
+      padding: $base-padding $base-padding*4;
+
+      .MoviesList__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .MoviesList__title {
+        color: $white;
+      }
+
+      .MovieList__return {
+
+
+        .MovieList__link {
+          color: $white;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            color: $lightRed;
+          }
+        }
+      }
+    }
+  }
+
+  .MovieList__info {
+    background: $black;
+    height: 40px;
+  }
+
+  .MoviesList__movies {
+    min-height: 350px;
+    width: 750px;
+    margin: $base-margin auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    .MovieList__error {
+      margin: $base-margin*2 auto;
+      font-size: $font-size-xlg;
+      font-weight: bold;
+      color: $silver;
+    }
+  }
+
+  .MoviesList__footer {
+    background: $black;
+
+    .MoviesList__container {
+      padding: $base-padding/2 $base-padding*4;
+
+      .MovieList__title {
+        color: $white;
+      }
+    }
+  }
+}

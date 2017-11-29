@@ -1,0 +1,63 @@
+@import '../styles/style.scss';
+
+.MovieDescription {
+  display: flex;
+  max-height: 420px;
+  margin-top: $base-margin;
+  padding: $base-padding/2 $base-padding*1.5;
+
+  .MovieDescription__error {
+    margin: 0 auto;
+    color: $white;
+    font-size: $font-size-xlg;
+    font-weight: bold;
+  }
+
+  .MovieDescription__poster {
+
+    .MovieDescription__img {
+      border-radius: 3px;
+      border: 1px solid $white;
+      background: url('https://s-media-cache-ak0.pinimg.com/originals/d3/8b/c3/d38bc38ad9ba60f9091aa2a9b3f4190f.png');
+      max-width: 280px;
+      // min-height: 400px;
+      background-position: center;
+    }
+  }
+
+  .MovieDescription__info {
+    padding: $base-padding $base-padding*2;
+    color: $white;
+
+    .MovieDescription__container {
+      display: flex;
+      margin-bottom: $base-margin;
+
+      .MovieDescription__rating {
+        margin-left: $base-margin;
+        border: 1px solid $white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 2.2;
+        font-size: $font-size-s;
+      }
+
+      .MovieDescription__num {
+        font-weight: bold;
+        margin-right: $base-margin*2;
+      }
+    }
+
+    .MovieDescription__summary {
+      font-size: $font-size;
+    }
+
+    .MovieDescription__stuff {
+      font-size: $font-size-s;
+      margin-top: $base-margin/1.333;
+      text-transform: uppercase;
+    }
+  }
+}

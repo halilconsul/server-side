@@ -1,0 +1,43 @@
+@import '../styles/style.scss';
+
+.Movie {
+  margin: $base-margin/1.33333;
+  width: 220px;
+
+  .Movie__poster {
+    height: 325px;
+
+    .Movie__img {
+      background: url('https://s-media-cache-ak0.pinimg.com/originals/d3/8b/c3/d38bc38ad9ba60f9091aa2a9b3f4190f.png');
+      min-width: 220px;
+      min-height: 315px;
+      background-position: center;
+      border-radius: 7px;
+      width: 100%;
+    }
+  }
+
+  .Movie__info {
+    font-size: $font-size-s;
+
+    .Movie__title {
+      align-items: baseline;
+      display: flex;
+      justify-content: space-between;
+
+      .Movie__text {
+        font-weight: bold;
+      }
+
+      .Movie__releaseYear {
+        border: 1px solid grey;
+        padding: 0 $base-padding/2;
+        border-radius: 3px;
+      }
+    }
+
+    .Movie__category {
+      color: grey;
+    }
+  }
+}
